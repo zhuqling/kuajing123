@@ -1,0 +1,272 @@
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", arial, "Hiragino Sans GB",
+    "Hiragino Sans GB W3";
+  font-size: 14px;
+  color: #333;
+  background-color: #fafafa;
+  min-width: 1190px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: #f50;
+}
+ul,
+.li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-layout {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/* header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #fff;
+  border-bottom: 1px solid #d1d8e5;
+  box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0);
+  transition: all 300ms ease-in-out;
+}
+nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav ul {
+  display: flex !important;
+}
+.logo {
+  position: relative;
+  height: 60px;
+  width: 120px;
+  margin-right: 1.5625em;
+}
+nav li {
+  line-height: 80px;
+}
+nav li a {
+  display: block;
+  white-space: nowrap;
+  font-size: 1.0625em;
+  font-weight: 500;
+  transition-property: border-color, fill;
+  transition-duration: 300ms;
+
+  letter-spacing: 0.02em;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
+
+  height: 80px;
+  color: #212b35;
+}
+nav li a:hover {
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  position: relative;
+  height: 70px;
+  margin-top: 20px;
+  background: #f7f7f8;
+  border: 1px solid #e9e9e9;
+  clear: both;
+
+  padding-top: 22px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  min-height: 224px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.box-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 9px 0 40px;
+  background-color: #fff;
+  border: 1px solid #dee3eb;
+}
+
+.split-line {
+  position: relative;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #f5f6f9;
+  margin: 11px 0 9px;
+  overflow: hidden;
+}
+.split {
+  margin: 0 17px;
+  border-bottom: 1px solid #eee;
+}
+
+/* nav */
+.nav-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+.nav li {
+  position: relative;
+  float: left;
+  padding: 20px 15.5px 11px;
+  cursor: pointer;
+}
+.nav li.current {
+  color: #24a500;
+}
+.nav li.current:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 3px;
+  margin-left: 10%;
+  background-color: #24a500;
+  border-radius: 3px;
+}
+.nav-panel {
+  display: none;
+}
+.nav-panel.current {
+  display: block;
+}
+
+/* box */
+
+.box-wrap {
+  transition: margin-top 0.6s ease-out;
+  padding: 14px 0 13px;
+  display: block;
+  position: relative;
+}
+.box-wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.box-item {
+  width: 20%;
+  height: 180px;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+/* grid */
+
+.grid-wrapper {
+  transition: margin-top 0.6s ease-out;
+  padding: 14px 0 13px;
+}
+.grid-inner {
+  margin: -6px 0.1rem 0;
+  overflow: hidden;
+}
+.grid-inner a,
+.grid-inner a:visited {
+  position: relative;
+  float: left;
+  width: 16.66%;
+  line-height: 1;
+  padding: 47px 0 0;
+  text-align: center;
+  white-space: nowrap;
+  background-position: center 12px;
+  font-size: 13px;
+}
+
+/* section */
+
+.section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 80%;
+  position: relative;
+  float: left;
+}
+.section h2,
+.section li {
+  position: relative;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #24a500;
+  font-size: 12px;
+}
+.section h2 {
+  margin: 0;
+  padding: 0;
+  width: 19%;
+}
+.section h2:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: 50%;
+  right: 0;
+  margin-top: -7.5px;
+  background-color: #f2f2f2;
+}
+.section li {
+  list-style: none;
+  margin: 0;
+}
+
+/* row */
+.row-wrapper {
+  background-color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.row-wrapper a,
+.row-wrapper a:visited {
+  float: left;
+  width: 20%;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+
+  padding: 10px 0 10px 2rem;
+  text-align: left;
+}
